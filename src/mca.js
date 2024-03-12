@@ -4,6 +4,18 @@ const student = [
         AdmissionNo : 15618223083,
         Division : "B",
         RollNo : 16 
+    },
+    {
+        StudentName : "Ravi",
+        AdmissionNo : 15618223011,
+        Division : "B",
+        RollNo : 15 
+    },
+    {
+        StudentName : "Meru",
+        AdmissionNo : 15618223048,
+        Division : "B",
+        RollNo : 38 
     }
 ]
 
