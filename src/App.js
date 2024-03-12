@@ -1,27 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import Demo from './demo.js'
+import Contact from './contact.js' 
+import student from './mca.js'
 
 function App() {
+  console.log(student);
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-
-    <Demo />
+    <>
+  
+    {/* <Demo /> */}
+    {
+      student.map(function(student){
+        return <Contact image={`https://cms.atmiya.edu.in/images/Stud_Photo/${student.AdmissionNo}.JPG`} name={`${student.StudentName}`} description={`${student.Division} - ${student.RollNo}`} />
+      })
+    }
+  </>
   );
 }
 
