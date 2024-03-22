@@ -17,7 +17,7 @@ function App() {
       })
     }
 
-    let [count, setCount] = useState(0);
+  let [count, setCount] = useState(0);
   const numbers = [1, 2, , 6, 8, 34, 66];
   //console.log(numbers);
 
